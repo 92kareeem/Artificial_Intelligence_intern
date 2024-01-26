@@ -5,10 +5,10 @@ import face_recognition as fr
 video_capture = cv2.VideoCapture(0)
 
 # Load the image and face encoding
-image = fr.load_image_file("Psize_photograph.jpg")
+image = fr.load_image_file("Your_image.jpg")
 image_face_encoding = fr.face_encodings(image)[0]
 known_face_encodings = [image_face_encoding]
-known_face_names = ["kareem"]
+known_face_names = ["Name of the person whose photo is loaded first to get detected"]
 
 while True:
     ret, frame = video_capture.read()
